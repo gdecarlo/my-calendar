@@ -3,4 +3,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
+
+
+
+
+const app = createApp(App)
+// Use plugin with optional defaults
+app.use(VCalendar, {})
+
+app.mount('#app')
